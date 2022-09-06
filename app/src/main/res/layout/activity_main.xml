@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--Linear layout wraps around all elements-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:layout_gravity="center_vertical">
+
+    <!--XML tags are user defined, show one after the other-->
+    <!--Extract string resources by
+        1. Click on lightbulb near a string
+        2. Extract string resource
+        3. Stored in values>strings.xml-->
+    <!--XML:HTML, Kotlin:JS-->
+    <ImageView
+        android:id = "@+id/dice_image"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:src="@drawable/dice_1"/>
+    <!--<TextView
+        android:id = "@+id/button_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_1"
+        android:textSize="30sp"
+        android:layout_gravity="center_horizontal"/>-->
+
+    <!--Every view needs an ID to be accessed by Kotlin code - MainActivity.kt
+    android:id="@+id/id_you_want_to_give"-->
+    <Button
+        android:id="@+id/roll_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/roll"
+        android:layout_gravity="center_horizontal"/>
+
+
+</LinearLayout>
